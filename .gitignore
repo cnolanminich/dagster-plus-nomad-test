@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.dagster_cloud/
+dist/
+build/
+.env
+.python-version
+uv.lock
