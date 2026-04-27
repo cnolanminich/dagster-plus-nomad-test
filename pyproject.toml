@@ -26,13 +26,10 @@ root_module = "dagster_plus_nomad_test"
 registry_modules = [
     "dagster_plus_nomad_test.components.*",
 ]
-
-# The Dagster+ deployment + agent queue this project is wired to.
-# This block is read by the GitHub Action workflow via dagster-cloud-cli
-# so the deploy targets the right queue.
-[tool.dagster_cloud]
-organization = "hooli"
-deployment = "data-eng-dev"
+# Pin this location to the local Nomad agent's queue. `dg plus deploy
+# finish` writes this through to Dagster+ as the location's agent_queue,
+# which routes reconcile requests to whichever agent is serving that
+# queue (in our case, the Mac-local Nomad agent).
 agent_queue = "testing-nomad"
 
 

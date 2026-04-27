@@ -1,8 +1,0 @@
-locations:
-  - location_name: dagster-plus-nomad-test
-    code_source:
-      module_name: dagster_plus_nomad_test.definitions
-    build:
-      directory: .
-      registry: ghcr.io/cnolanminich/dagster-plus-nomad-test
-    agent_queue: testing-nomad
