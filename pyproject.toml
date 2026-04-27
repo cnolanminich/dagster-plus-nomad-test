@@ -32,7 +32,7 @@ registry_modules = [
 # so the deploy targets the right queue.
 [tool.dagster_cloud]
 organization = "hooli"
-deployment = "data-env-dev"
+deployment = "data-eng-dev"
 agent_queue = "testing-nomad"
 
 
